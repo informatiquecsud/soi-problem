@@ -13,9 +13,7 @@ def main():
     This is where the task is solved
     '''
     
-    text = input()
-    
-    print(text)
+    n = int(inpu
     
 
 
