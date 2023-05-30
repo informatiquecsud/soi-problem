@@ -6,18 +6,13 @@ setup(
     description='Tool to facilitate debugging SOI tasks in gitpod',
     long_description='Tool to facilitate debugging SOI tasks in gitpod,
     url='',
-    keywords='development, setup, setuptools',
+    keywords='competitive programming',
     python_requires='>=3.7, <4',
     packages=find_packages(include=['exampleproject', 'exampleproject.*']),
     install_requires=[
-        'PyYAML',
-        'pandas==0.23.3',
-        'numpy>=1.14.5',
-        'matplotlib>=2.2.0,,
-        'jupyter'
     ],
     package_data={
-        'sample': ['sample_data.csv'],
+        
     },
     entry_points={
         'runners': [
