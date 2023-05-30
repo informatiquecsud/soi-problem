@@ -15,12 +15,14 @@ def main():
     
     n = int(input())
     
-    i = 0
+    position_max = i
     valeur_max = float("-Inf")
-    for _ in range(n):
+    for i in range(n):
         valeur = int(input())
+        if valeur > valeur_max:
+            position_max = i
         i += 1
-        
+    print(position_max)
     
 
 
