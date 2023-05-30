@@ -1,4 +1,6 @@
+'''
 
+'''
 
 # Load tests from the `test1.in` file in the `tests` folder
 try:
