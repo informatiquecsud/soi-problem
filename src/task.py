@@ -13,7 +13,14 @@ def main():
     This is where the task is solved
     '''
     
-    n = int(inpu
+    n = int(input())
+    
+    i = 0
+    valeur_max = float("-Inf")
+    for _ in range(n):
+        valeur = int(input())
+        i += 1
+        
     
 
 
