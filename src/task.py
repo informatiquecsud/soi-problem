@@ -1,5 +1,5 @@
 '''
-
+This file contains a bug to illustrate the debugger in the gitpod environment.
 '''
 
 # Load tests from the `test1.in` file in the `tests` folder
