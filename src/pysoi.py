@@ -4,14 +4,14 @@ import os
 
 TEST_EXTENSION = '.in'
 
-def load_soi_test(filename, testdir='tests', extension=TEST_EXTENSION):
+def load_soi_test(filename, testdir='tests', extension=TEST_EXTENSION, debug=False):
     files = os.listdir(path=testdir)
 
     for f in files:
         f = os.path.join(testdir, f)
         if os.path.isfile(f) and f.endswith(extension):
             name = f.split(extension)[0]
-            print(f"Found test {name}")
+            if debug: print(f"Found test {name}")
 
     # Redirecting the selected file to standard input for debugging purposes
     sys.stdin = open(os.path.join(testdir, f"{filename}.in"), "r")

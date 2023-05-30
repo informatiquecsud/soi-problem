@@ -1,5 +1,5 @@
 '''
-Main file of the challenge
+This is where the task is solved
 '''
 
 try:
