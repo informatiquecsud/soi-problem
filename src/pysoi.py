@@ -4,7 +4,7 @@ import os
 
 TEST_EXTENSION = '.in'
 
-def load_soi_test(filename, testdir='tests', extension=TEST_EXTENSION, debug=False):
+def load_test(filename, testdir='tests', extension=TEST_EXTENSION, debug=False):
     files = os.listdir(path=testdir)
 
     for f in files:
