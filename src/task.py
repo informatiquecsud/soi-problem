@@ -4,7 +4,7 @@ This is where the task is solved
 
 try:
     from pysoi import *
-    load_test('test1', folder=__file__)
+    load_test('test1')
 except:
     pass
     
