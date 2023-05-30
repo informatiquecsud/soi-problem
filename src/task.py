@@ -1,6 +1,4 @@
-'''
-This is where the task is solved
-'''
+
 
 # Load tests from the `test1.in` file in the `tests` folder
 try:
@@ -11,6 +9,9 @@ except:
     
 
 def main():
+    '''
+    This is where the task is solved
+    '''
     
     text = input()
     
