@@ -17,3 +17,15 @@ setup(
     entry_points={
     }
 )
+from distutils.core import setup
+
+setup(
+    name='pysoi',
+    version='1.0',
+    author='Cédric Donner',
+    description='Tool to facilitate debugging SOI tasks in gitpod',
+    long_description='Tool to facilitate debugging SOI tasks in gitpod',
+    url='',
+      author_email='gward@python.net',
+      packages=['distutils', 'distutils.command'],
+     )
