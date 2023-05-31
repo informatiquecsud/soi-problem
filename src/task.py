@@ -23,6 +23,7 @@ def main():
         valeur = int(input())
         if valeur > valeur_max:
             position_max = i
+            valeur_max = valeur
     print(position_max)
     
 
