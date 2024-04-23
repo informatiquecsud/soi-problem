@@ -25,11 +25,8 @@ def main():
     MAX_HEIGHT = int(1e6)
     MAX_QUERIES = int(1e5)
     
-     
-    
-    hights = [[] for _ in range(MAX_HIGHT)]
-    
     nb_queries = int(input())
+    nb_visibles = [1 for i in range(nb_queries)]
     
     index_affiche = 0
     for _ in range(nb_queries):
@@ -37,15 +34,14 @@ def main():
         if len(query) == 1:
             print("voir")
         else:
-            hight = int(query[1])
-            hights[hight].append(index_affiche)
-            debug("coller", hight)
-            debug(hights[hight])
+            height = int(query[1])
+            hights[height].append(index_affiche)
+            debug("coller", height)
+            debug(hights[height])
             index_affiche += 1
         
         
         debug(index_affiche)
-    debug(hights)
 
 
 if __name__ == '__main__':
