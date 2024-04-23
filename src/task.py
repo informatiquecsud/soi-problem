@@ -15,16 +15,10 @@ def main():
     This is where the task is solved
     '''
     
-    n = int(input())
-    
-    position_max = 0
-    valeur_max = float("-Inf")
-    for i in range(n):
-        valeur = int(input())
-        if valeur > valeur_max:
-            position_max = i
-            valeur_max = valeur
-    print(position_max)
+    nb_queries = int(input())
+    for _ in range(12):
+        query = input()
+        
     
 
 
