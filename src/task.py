@@ -2,6 +2,8 @@
 This file contains a bug to illustrate the debugger in the gitpod environment.
 '''
 
+
+
 # Load tests from the `test1.in` file in the `tests` folder
 try:
     from pysoi import *
@@ -9,8 +11,12 @@ try:
 except:
     pass
 
-def debug()
-    
+def debug(*args, kwargs):
+    level = kwargs.get('level', 0)
+    if DBG_LEVEL >= level:
+        print(*args)
+
+DBG_LEVEL = 0    
 
 def main():
     '''
