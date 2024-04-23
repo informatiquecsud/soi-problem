@@ -18,6 +18,10 @@ def debug(*args, **kwargs):
 
 DBG_LEVEL = 0
 
+def find_last_ge(heights, from_index, ):
+    while from_index >= 0:
+        
+
 def main():
     '''
     This is where the task is solved
@@ -26,7 +30,7 @@ def main():
     MAX_QUERIES = int(1e5)
     
     nb_queries = int(input())
-    nb_visibles = [1 for i in range(nb_queries)]
+    nb_visibles = [None for i in range(nb_queries)]
     
     index_affiche = 0
     for _ in range(nb_queries):
@@ -35,9 +39,7 @@ def main():
             print("voir")
         else:
             height = int(query[1])
-            hights[height].append(index_affiche)
             debug("coller", height)
-            debug(hights[height])
             index_affiche += 1
         
         
