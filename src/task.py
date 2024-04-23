@@ -28,10 +28,12 @@ def main():
             hight = int(query[1])
             hights[hight].append(index_affiche)
             print("coller", hight)
+            print(hights[hight])
             index_affiche += 1
         
         
-    
+        print(index_affiche)
+        print(hights)
 
 
 if __name__ == '__main__':
