@@ -27,7 +27,7 @@ def main():
         else:
             hight = int(query[1])
             hights[hight].append(index_affiche)
-            print("coller", index_affiche)
+            print("coller", hight)
             index_affiche += 1
         
         
