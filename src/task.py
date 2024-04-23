@@ -15,6 +15,8 @@ def main():
     This is where the task is solved
     '''
     
+    
+    
     nb_queries = int(input())
     for _ in range(12):
         query = input()
