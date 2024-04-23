@@ -31,8 +31,8 @@ def main():
     MAX_QUERIES = int(1e5)
     
     nb_queries = int(input())
-    nb_visibles = [None for i in range(nb_queries)]
-    heights = [None for i in range(nb_queries)]
+    nb_visibles = [0 for i in range(nb_queries)]
+    heights = [0 for i in range(nb_queries)]
     
     index_affiche = 0
     for _ in range(nb_queries):
@@ -43,6 +43,7 @@ def main():
             height = int(query[1])
             debug("coller", height)
             heights[index_affiche] = height
+            
             index_affiche += 1
         
         
