@@ -14,13 +14,13 @@ def main():
     '''
     This is where the task is solved
     '''
-    
-    
+    MAX_HIGHT = int(1e6)
+    hights = [0] * MAX_HIGHT
     
     nb_queries = int(input())
-    for _ in range(12):
+    for _ in range(nb_queries):
         query = input()
-        print(query)
+        
         
     
 
