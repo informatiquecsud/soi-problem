@@ -19,7 +19,12 @@ def main():
     
     nb_queries = int(input())
     for _ in range(nb_queries):
-        query = input()
+        query = [x for x in input().split(' ')]
+        if len(query) == 1:
+            print("voir")
+        else:
+            index = int(query[1])
+            print("coller", index)
         
         
     
