@@ -22,8 +22,10 @@ def main():
     '''
     This is where the task is solved
     '''
-    MAX_HIGHT = int(1e6)
+    MAX_HEIGHT = int(1e6)
+    MAX_QUERIES = int(1e5)
     
+     
     
     hights = [[] for _ in range(MAX_HIGHT)]
     
