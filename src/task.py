@@ -33,7 +33,7 @@ def main():
         
         
         print(index_affiche)
-        print(hights)
+    print(hights)
 
 
 if __name__ == '__main__':
