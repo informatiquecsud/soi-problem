@@ -18,12 +18,15 @@ def main():
     hights = [0] * MAX_HIGHT
     
     nb_queries = int(input())
+    
+    position
     for _ in range(nb_queries):
         query = [x for x in input().split(' ')]
         if len(query) == 1:
             print("voir")
         else:
-            index = int(query[1])
+            hight = int(query[1])
+            hights[hight] +=
             print("coller", index)
         
         
