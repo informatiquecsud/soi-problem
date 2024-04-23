@@ -42,7 +42,7 @@ def main():
         else:
             height = int(query[1])
             debug("coller", height)
-            heights[index_affiche]
+            heights[index_affiche] = height
             index_affiche += 1
         
         
