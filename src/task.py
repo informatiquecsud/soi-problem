@@ -18,9 +18,10 @@ def debug(*args, **kwargs):
 
 DBG_LEVEL = 0
 
-def find_last_ge(heights, from_index, ):
-    while from_index >= 0:
-        
+def find_last_height_ge(heights, i, height):
+    while i >= 0:
+        if heights[i] >= height:
+            return i
 
 def main():
     '''
