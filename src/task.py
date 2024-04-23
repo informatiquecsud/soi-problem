@@ -11,12 +11,12 @@ try:
 except:
     pass
 
-def debug(*args, kwargs):
+def debug(*args, **kwargs):
     level = kwargs.get('level', 0)
-    if DBG_LEVEL >= level:
+    if level >= DBG_LEVEL:
         print(*args)
 
-DBG_LEVEL = 0    
+DBG_LEVEL = 0
 
 def main():
     '''
@@ -35,13 +35,13 @@ def main():
         else:
             hight = int(query[1])
             hights[hight].append(index_affiche)
-            # print("coller", hight)
-            # print(hights[hight])
+            debug("coller", hight)
+            debug(hights[hight])
             index_affiche += 1
         
         
-        # print(index_affiche)
-    # print(hights)
+        debug(index_affiche)
+    debug(hights)
 
 
 if __name__ == '__main__':
