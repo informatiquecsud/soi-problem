@@ -22,6 +22,7 @@ def main():
     '''
     This is where the task is solved
     '''
+    MAX_HIGHT = int(1e6)
     
     
     hights = [[] for _ in range(MAX_HIGHT)]
