@@ -1,18 +1,15 @@
+0
 1
-2
-1
-2
-2
+3
 **********************************************************************
 File "/workspace/soi-problem/src/task.py", line 35, in __main__.find_last_height_geq
 Failed example:
     last_geq
-Expected:
-    [-1, 0, 0, 0, 0, 0, 0]
+Expected nothing
 Got:
     [0, 0, 0, 0, 0, 0, 0]
 **********************************************************************
-File "/workspace/soi-problem/src/task.py", line 37, in __main__.find_last_height_geq
+File "/workspace/soi-problem/src/task.py", line 36, in __main__.find_last_height_geq
 Failed example:
     find_last_height_geq(heights, 1)
 Exception raised:
@@ -23,7 +20,7 @@ Exception raised:
         find_last_height_geq(heights, 1)
     TypeError: find_last_height_geq() missing 1 required positional argument: 'i'
 **********************************************************************
-File "/workspace/soi-problem/src/task.py", line 39, in __main__.find_last_height_geq
+File "/workspace/soi-problem/src/task.py", line 38, in __main__.find_last_height_geq
 Failed example:
     find_last_height_geq(heights, 3)
 Exception raised:
@@ -34,7 +31,7 @@ Exception raised:
         find_last_height_geq(heights, 3)
     TypeError: find_last_height_geq() missing 1 required positional argument: 'i'
 **********************************************************************
-File "/workspace/soi-problem/src/task.py", line 41, in __main__.find_last_height_geq
+File "/workspace/soi-problem/src/task.py", line 40, in __main__.find_last_height_geq
 Failed example:
     find_last_height_geq(heights, 4)
 Exception raised:
@@ -45,7 +42,7 @@ Exception raised:
         find_last_height_geq(heights, 4)
     TypeError: find_last_height_geq() missing 1 required positional argument: 'i'
 **********************************************************************
-File "/workspace/soi-problem/src/task.py", line 43, in __main__.find_last_height_geq
+File "/workspace/soi-problem/src/task.py", line 42, in __main__.find_last_height_geq
 Failed example:
     find_last_height_geq(heights, 5)
 Exception raised:
@@ -56,7 +53,7 @@ Exception raised:
         find_last_height_geq(heights, 5)
     TypeError: find_last_height_geq() missing 1 required positional argument: 'i'
 **********************************************************************
-File "/workspace/soi-problem/src/task.py", line 45, in __main__.find_last_height_geq
+File "/workspace/soi-problem/src/task.py", line 44, in __main__.find_last_height_geq
 Failed example:
     find_last_height_geq(heights, 6)
 Exception raised:
