@@ -11,6 +11,8 @@ try:
 except:
     pass
 
+import sys
+input = sys.stdin.readline
 
 def debug(*args, **kwargs):
     level = kwargs.get("level", 1)
@@ -20,30 +22,19 @@ def debug(*args, **kwargs):
 
 DBG_LEVEL = 0
 
-
-def find_last_height_geq(heights, i):
+def find_last_height_geq(heights, i, last_geq):
     """
-    >>> heights = [4, 3, 2, 1, 3, 5, 3]
-    >>> find_last_height_geq(heights, 0)
-    -1
-    >>> find_last_height_geq(heights, 1)
-    0
-    >>> find_last_height_geq(heights, 3)
-    2
-    >>> find_last_height_geq(heights, 4)
-    1
-    >>> find_last_height_geq(heights, 5)
-    -1
-    >>> find_last_height_geq(heights, 6)
-    5
-    >>>
     """
     height = heights[i]
-    i -= 1
-    j = -1
-    for j in range(i, -1, -1):
+    j = i - 1
+
+    while j >= 0:
         if heights[j] >= height:
+            last_geq[i] = j
             return j
+        else:
+            j = last_geq[j]
+
     return -1
 
 
@@ -57,21 +48,19 @@ def main():
     nb_queries = int(input())
     nb_visibles = [0 for i in range(nb_queries)]
     heights = [0 for i in range(nb_queries)]
+    last_geq = [i - 1 for i in range(nb_queries)]
 
     index_affiche = 0
     for _ in range(nb_queries):
         query = [x for x in input().split(" ")]
         if len(query) == 1:
-            debug("query")
-            print(nb_visibles[index_affiche - 1])
+            sys.stdout.write(str(nb_visibles[index_affiche - 1]) + "\n")
         else:
             height = int(query[1])
-            debug("coller", height)
+
             heights[index_affiche] = height
-            index_last_geq = find_last_height_geq(heights, index_affiche)
-            debug("visibles", nb_visibles)
-            debug("heights", heights)
-            debug("last geq index", index_last_geq)
+            index_last_geq = find_last_height_geq(heights, index_affiche, last_geq)
+            
             if index_last_geq == -1:
                 nb_visibles[index_affiche] = 1
             elif heights[index_last_geq] == height:
@@ -81,8 +70,6 @@ def main():
 
             index_affiche += 1
 
-        debug("index_affiche", index_affiche)
-        debug("-----------")
 
 
 if __name__ == "__main__":
